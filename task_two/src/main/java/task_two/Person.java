@@ -6,26 +6,35 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class User {
-	
+public class Person {
 
-    public User(String string, String string2, int parseInt, int parseInt2, String string3, String string4,
-			String string5) {
-		// TODO Auto-generated constructor stub
+	public Person(String username, String password, int uid, int gid, String fullname, String homeDirectory,
+				String shell) {
+		super();
+		this.username = username;
+		this.password = password;
+		this.uid = uid;
+		this.gid = gid;
+		this.fullname = fullname;
+		this.homeDirectory = homeDirectory;
+		this.shell = shell;
 	}
-    
 	@Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
-    private int id;
-    private String username;
-    private String password;
-    private int uid;
-    private int gid;
-    private String fullname;
-    private String homeDirectory;
-    private String shell;
-    
-    
+	@GeneratedValue(strategy= GenerationType.AUTO)
+	private int id;
+	private String username;
+	private String password;
+	private int uid;
+	private int gid;
+	private String fullname;
+	private String homeDirectory;
+	private String shell;
+
+	public Person() {
+
+	}
+
+
 	public int getId() {
 		return id;
 	}
@@ -74,9 +83,7 @@ public class User {
 	public void setShell(String shell) {
 		this.shell = shell;
 	}
-    
-    
-    
+
+
+
 }
-
-
