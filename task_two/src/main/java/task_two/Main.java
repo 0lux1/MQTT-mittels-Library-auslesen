@@ -26,7 +26,7 @@ public class Main {
 
 			String temp = src.nextLine();
 			if (temp.equals("-init")) {
-				createTableAndInsertUsers("passwd.txt");
+				createTableAndInsertUsers("task_two/passwd.txt");
 			} else if (temp.equals("-s")) {
 				System.out.println("What user do you want to search");
 				getUserData(src.nextLine());
