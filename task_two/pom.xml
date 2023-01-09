@@ -45,7 +45,7 @@
 
 					<archive>
 						<manifest>
-							<mainClass>task_two.UserDataSearch</mainClass>
+							<mainClass>task_two.Main</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>
